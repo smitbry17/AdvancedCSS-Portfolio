@@ -32,6 +32,7 @@ header {
     linear-gradient(
       to right, #00f8f8 -20%, #ffffff 40%, #000000 100%
     ) 0 0 100% 0;
+  z-index: 999;
 }
 
 nav {
@@ -74,22 +75,79 @@ h1{
   text-align: left;
 }
 
-.flex-item {
-  min-height: 150px;
-  max-height: 150px;
-  flex-basis: calc(50% - 1em);
-  display: flex;
-  align-items: flex-end;
-  padding: 0 0 20px 0;
-  margin: 0.5em;
-  text-decoration: none;
-  background-blend-mode: soft-light;
-  background-size: 150%;
-  transition: all 0.5s;
-  font-size: 0.9rem;
+/* Page Sections */
+
+.page-section {
+	display: flex;
+	flex-direction: row;
 }
+
+.page-section h2 {
+	width: 30%;
+	text-align: right;
+	padding: 5px;
+	border-right: 2px solid #000;
+}
+
+.page-section div {
+	width: 70%;
+	padding: 20px;
+}
+
+/* Page Sections END */
+
+/* Work Tab Designs */
+.flex-item {
+    min-height: 150px;
+    max-height: 150px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+  }
 
 .css-tab-design {
   background-image: url(./images/unknown.png);
-  background-size: 20rem;
+  background-size: contain;
+  width: 60rem;
+  height: 60rem;
+  resize: both;
+  background-repeat: no-repeat;
 }
+/* Work Tab design END*/
+
+/* footer */
+footer {
+    padding-top: 15px;
+    width: 100%;
+    min-height: 6rem;
+    font-family: 'Bebas Neue', cursive;
+    background-color: var(--color1);
+    border-top: 5px solid #333;
+    text-align: center;
+}
+
+footer h2, footer div {
+  margin: 0 auto;
+}
+
+.links a { 
+    margin-right: 25px;
+    text-decoration: none;
+    border-bottom: 3px solid #333;
+    color: #333;
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: 20px;
+    transition: font-size 0.2s;
+  }
+
+.links a:hover {
+    font-size: 1.5rem;
+}
+/* footer end */
