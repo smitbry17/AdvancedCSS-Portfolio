@@ -1,76 +1,95 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Color Palette */
-  :root {
- --color1: #0CAEFE;
- --color2: #000001;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-  }
-  body{
-    margin: 0;
-    padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: var(--color2);
-    background-image: url(https://media.istockphoto.com/id/1094453686/photo/studio-photography-black.jpg?b=1&s=170667a&w=0&k=20&c=O1hXw_s1zI145x-aHrAFf4NdBzJM0P6CIIRfI7iET2M=);
-    background-repeat: no-repeat;
-    background-size: cover;
-    line-height: 1.5;
-  }
-  nav{
-    position: sticky;
-     flex-wrap: wrap;
-    flex-direction: row;
-    display: block;
-    color: #f2f2f2;
-    text-align: right;
-    padding: 1rem;
-    margin-right: 0;
-  }
-  header{
-    position: sticky;
-    padding: 15px 6% 15px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: var(--color1);
-    }
-    h1{
-        text-align: right;
-    }
-    .header-border {
-        position: sticky;
-        height: 100px;
-        padding-bottom: 6px;
-      }
-      .header-border::after{
-        content: '';
-        height: 6px;
-        position: sticky;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: -moz-linear-gradient(left, rgba(237,128,52,1) 0%, rgba(237,128,52,1) 33%, rgba(254,177,35,1) 33%, rgba(254,177,35,1) 66%, rgba(33,132,205,1) 66%, rgba(33,132,205,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, rgba(237,128,52,1) 0%,rgba(237,128,52,1) 33%,rgba(254,177,35,1) 33%,rgba(254,177,35,1) 66%,rgba(33,132,205,1) 66%,rgba(33,132,205,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, rgba(237,128,52,1) 0%,rgba(237,128,52,1) 33%,rgba(254,177,35,1) 33%,rgba(254,177,35,1) 66%,rgba(33,132,205,1) 66%,rgba(33,132,205,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      }
-    .hero-banner {
-        background-image: url(https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/page/campaign/creators/creators_xps_precision_landing_page_banner_desktop_3.jpg?fmt=jpg&wid=2792&hei=839);
-        background-size:contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-blend-mode: soft-light;
-        min-height: 30vh;
-        color: var(--light);
-        padding: 2% 6%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        text-align: right;
-      }
-      .page-section{
-        text-decoration-color: white;
-      }
+/* Color Palette */
+:root {
+  --color1: #0caefe;
+  --color2: #000001;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(255, 255, 255);
+  background-image: url(https://media.istockphoto.com/id/1094453686/photo/studio-photography-black.jpg?b=1&s=170667a&w=0&k=20&c=O1hXw_s1zI145x-aHrAFf4NdBzJM0P6CIIRfI7iET2M=);
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.5;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  min-height: 12rem;
+  font-family: 'Bebas Neue', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color1);
+  border-bottom: 5px solid;
+  border-image: 
+    linear-gradient(
+      to right, #00f8f8 -20%, #ffffff 40%, #000000 100%
+    ) 0 0 100% 0;
+}
+
+nav {
+  color: #f2f2f2;
+  padding: 1rem;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  border-bottom: 3px solid #333;
+  color: #333;
+  font-size: 2rem;
+  text-transform:uppercase;
+  line-height: 20px;
+  transition: font-size 0.2s;
+}
+
+nav a:hover {
+    font-size: 3rem;
+}
+
+h1{
+    font-size: 3rem;
+    background-color: #333;
+    padding: 20px 15px 20px 50px;
+}
+
+.hero-banner {
+  margin-top: 12rem;
+  background-image: url(https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/page/campaign/creators/creators_xps_precision_landing_page_banner_desktop_3.jpg?fmt=jpg&wid=2792&hei=839);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 30rem;
+  color: var(--light);
+  padding: 2% 6%;
+  display: flex;
+  text-align: left;
+}
+
+.flex-item {
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+.css-tab-design {
+  background-image: url(./images/unknown.png);
+  background-size: 20rem;
+}
