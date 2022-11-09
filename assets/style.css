@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Color Palette */
+  :root {
+ --color1: #0CAEFE;
+ --color2: #000001;
+
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--color2);
+    background-image: url(https://media.istockphoto.com/id/1094453686/photo/studio-photography-black.jpg?b=1&s=170667a&w=0&k=20&c=O1hXw_s1zI145x-aHrAFf4NdBzJM0P6CIIRfI7iET2M=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.5;
+  }
+  nav{
+    position: sticky;
+     flex-wrap: wrap;
+    flex-direction: row;
+    display: block;
+    color: #f2f2f2;
+    text-align: right;
+    padding: 1rem;
+    margin-right: 0;
+  }
+  header{
+    position: sticky;
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--color1);
+    }
+    h1{
+        text-align: right;
+    }
+    .header-border {
+        position: sticky;
+        height: 100px;
+        padding-bottom: 6px;
+      }
+      .header-border::after{
+        content: '';
+        height: 6px;
+        position: sticky;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: -moz-linear-gradient(left, rgba(237,128,52,1) 0%, rgba(237,128,52,1) 33%, rgba(254,177,35,1) 33%, rgba(254,177,35,1) 66%, rgba(33,132,205,1) 66%, rgba(33,132,205,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(237,128,52,1) 0%,rgba(237,128,52,1) 33%,rgba(254,177,35,1) 33%,rgba(254,177,35,1) 66%,rgba(33,132,205,1) 66%,rgba(33,132,205,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(237,128,52,1) 0%,rgba(237,128,52,1) 33%,rgba(254,177,35,1) 33%,rgba(254,177,35,1) 66%,rgba(33,132,205,1) 66%,rgba(33,132,205,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      }
+    .hero-banner {
+        background-image: url(https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/page/campaign/creators/creators_xps_precision_landing_page_banner_desktop_3.jpg?fmt=jpg&wid=2792&hei=839);
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: soft-light;
+        min-height: 30vh;
+        color: var(--light);
+        padding: 2% 6%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+      }
+      .page-section{
+        text-decoration-color: white;
+      }
