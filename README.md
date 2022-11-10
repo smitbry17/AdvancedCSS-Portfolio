@@ -9,4 +9,4 @@
 
 ## Usage
 
-![alt text](./assets/images/portfolio.gif)
+![alt text](/assets/images/portfolio.gif)
