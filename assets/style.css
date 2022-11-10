@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 /* Color Palette */
 :root {
   --color1: #0caefe;
   --color2: #000001;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -15,23 +16,26 @@ body {
   background-size: cover;
   line-height: 1.5;
 }
-
+/* Header and Navigation Bar */
 header {
   position: fixed;
   top: 0px;
   width: 100%;
   min-height: 12rem;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: var(--color1);
   border-bottom: 5px solid;
-  border-image: 
-    linear-gradient(
-      to right, #00f8f8 -20%, #ffffff 40%, #000000 100%
-    ) 0 0 100% 0;
+  border-image: linear-gradient(
+      to right,
+      #00f8f8 -20%,
+      #ffffff 40%,
+      #000000 100%
+    )
+    0 0 100% 0;
   z-index: 999;
 }
 
@@ -47,21 +51,21 @@ nav a {
   border-bottom: 3px solid #333;
   color: #333;
   font-size: 2rem;
-  text-transform:uppercase;
+  text-transform: uppercase;
   line-height: 20px;
   transition: font-size 0.2s;
 }
 
 nav a:hover {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
-h1{
-    font-size: 3rem;
-    background-color: #333;
-    padding: 20px 15px 20px 50px;
+h1 {
+  font-size: 3rem;
+  background-color: #333;
+  padding: 20px 15px 20px 50px;
 }
-
+/* Hero Banner */
 .hero-banner {
   margin-top: 12rem;
   background-image: url(https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/page/campaign/creators/creators_xps_precision_landing_page_banner_desktop_3.jpg?fmt=jpg&wid=2792&hei=839);
@@ -75,36 +79,34 @@ h1{
   display: flex;
   text-align: left;
 }
+
 /* About Me */
-p{
+p {
   font-size: 1.4rem;
 }
 
 /* Page Sections */
 
 .page-section {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .page-section > h2 {
   font-size: 2.5rem;
-  font-family: 'Bebas Neue', cursive;
-	flex-basis: 25%;
-	text-align: right;
-	padding-right: 15px;
-	border-right: 2px solid rgb(4, 182, 236);
-  
+  font-family: "Bebas Neue", cursive;
+  flex-basis: 25%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 2px solid rgb(4, 182, 236);
 }
 
 .page-section > div {
-	flex-basis: 70%;
-	padding: 20px;
+  flex-basis: 70%;
+  padding: 20px;
 }
-
-/* Page Sections END */
 
 /* Work Tab Designs */
 
@@ -115,27 +117,27 @@ p{
 }
 .flex-container a {
   text-decoration: none;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   color: #333;
   font-weight: bold;
   font-size: 23px;
 }
 
 .flex-item {
-border: 5px solid #0caefe;
-display: flex;
-align-items: flex-end;
-flex-basis: calc(50% - 40px);
-margin: 10px;
-min-height: 350px;
-max-height: 350px;
-padding-bottom: 50px;
-background-blend-mode: soft-light;
-background-size: cover;
+  border: 5px solid #0caefe;
+  display: flex;
+  align-items: flex-end;
+  flex-basis: calc(50% - 40px);
+  margin: 10px;
+  min-height: 350px;
+  max-height: 350px;
+  padding-bottom: 50px;
+  background-blend-mode: soft-light;
+  background-size: cover;
 }
 
 .flex-item:hover {
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .flex-item div {
@@ -144,82 +146,77 @@ background-size: cover;
 }
 
 .html-background {
-background-image: url('../assets/images/unknown.png');
+  background-image: url("../assets/images/unknown.png");
 }
-
-
-
-/* Work Tab design END*/
 
 /* footer */
 footer {
-    padding-top: 15px;
-    width: 100%;
-    min-height: 6rem;
-    font-family: 'Bebas Neue', cursive;
-    background-color: var(--color1);
-    border-top: 5px solid #333;
-    text-align: center;
+  padding-top: 15px;
+  width: 100%;
+  min-height: 6rem;
+  font-family: "Bebas Neue", cursive;
+  background-color: var(--color1);
+  border-top: 5px solid #333;
+  text-align: center;
 }
 
-footer h2, footer div {
+footer h2,
+footer div {
   margin: 0 auto;
 }
 
-.links a { 
-    margin-right: 25px;
-    text-decoration: none;
-    border-bottom: 3px solid #333;
-    color: #333;
-    font-size: 1rem;
-    text-transform: uppercase;
-    line-height: 20px;
-    transition: font-size 0.2s;
-  }
+.links a {
+  margin-right: 25px;
+  text-decoration: none;
+  border-bottom: 3px solid #333;
+  color: #333;
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 20px;
+  transition: font-size 0.2s;
+}
 
 .links a:hover {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-/* footer end */
-
-
-
-@media screen and (max-width:980px) {
-  header{
+/* media querys */
+@media screen and (max-width: 980px) {
+  header {
     flex-direction: column;
   }
 
-  header h1{
+  header h1 {
     width: 100%;
   }
-  header nav{
+  header nav {
     flex-direction: column;
     justify-content: center;
     text-align: center;
   }
 
-  nav a{
+  nav a {
     padding-bottom: 10px;
     margin-bottom: 20px;
   }
 
-  .page-section > div, .page-section > h2 {
+  .page-section > div,
+  .page-section > h2 {
     flex-basis: 100%;
   }
-  .page-section > h2{
+  .page-section > h2 {
     border-right: none;
     border-bottom: 2px solid rgb(4, 182, 236);
     text-align: center;
   }
-  .links a{
+  .links a {
     display: block;
     font-size: 2rem;
     margin-bottom: 10px;
   }
-  footer h2{
+  footer h2 {
     margin-bottom: 10px;
   }
-  .flex-item{
+  .flex-item {
     flex-basis: 100%;
   }
 }
