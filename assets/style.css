@@ -148,6 +148,9 @@ p {
 .html-background {
   background-image: url("../assets/images/unknown.png");
 }
+.java-background {
+  background-image: url("../assets/images/Preview.png");
+}
 
 /* footer */
 footer {
