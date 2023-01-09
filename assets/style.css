@@ -151,6 +151,9 @@ p {
 .java-background {
   background-image: url("../assets/images/Preview.png");
 }
+.node-background {
+  background-image: url("../assets/images/image.png");
+}
 
 /* footer */
 footer {
